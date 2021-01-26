@@ -25,7 +25,7 @@
 
 
 
-# 下面是我遇到的几个个坑
+# 下面是我遇到的几个坑
 * 使用maven命令运行，命令:mvn tomcat7:run
 * 用户名：admin  密码：123456
 * 因为我的是docker下的mysql 5.7.9 ，所以我修改了pom.xml文件 mysql-connector-java版本为：5.1.49
