@@ -23,13 +23,10 @@
 
 * 后端地址：http://localhost:8080/manage/user/login
 
-## 图片示例
 
-![前端](https://raw.githubusercontent.com/a695979515/enterprise/master/src/main/webapp/attached/image/%E5%89%8D%E7%AB%AF.png)
 
-![后端首页](https://raw.githubusercontent.com/a695979515/enterprise/master/src/main/webapp/attached/image/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E4%B8%BB%E9%A1%B5.png)
-
-![滚动图管理](https://raw.githubusercontent.com/a695979515/enterprise/master/src/main/webapp/attached/image/%E6%BB%9A%E5%8A%A8%E5%9B%BE%E7%89%87%E7%AE%A1%E7%90%86.png)
-
-![数据备份](https://raw.githubusercontent.com/a695979515/enterprise/master/src/main/webapp/attached/image/%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD.png)
-
+# 下面是我遇到的几个个坑
+* 使用maven命令运行，命令:mvn tomcat7:run
+* 用户名：admin  密码：123456
+* 因为我的是docker下的mysql 5.7.9 ，所以我修改了pom.xml文件 mysql-connector-java版本为：5.1.49
+* 首页图片显示不正常，是因为修改了端口，请修改对应表：t_systemsetting里面的端口号。
